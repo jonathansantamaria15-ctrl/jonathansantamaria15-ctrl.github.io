@@ -293,9 +293,10 @@ async function seedAnalytics(businessId: string, sampleTableIds: string[]) {
         qr_id: qr?.id ?? null,
         table_id: qr?.assigned_table_id ?? null,
         session_id: `demo-${day}-${i}`,
+        metadata: {},
         created_at: ts,
       });
-      rows.push({ business_id: businessId, type: "menu_opened", qr_id: qr?.id ?? null, session_id: `demo-${day}-${i}`, created_at: ts });
+      rows.push({ business_id: businessId, type: "menu_opened", qr_id: qr?.id ?? null, session_id: `demo-${day}-${i}`, metadata: {}, created_at: ts });
       if (products && products.length > 0 && Math.random() > 0.4) {
         const p = products[Math.floor(Math.random() * products.length)];
         rows.push({
@@ -304,11 +305,12 @@ async function seedAnalytics(businessId: string, sampleTableIds: string[]) {
           product_id: p.id,
           section_id: p.section_id,
           session_id: `demo-${day}-${i}`,
+          metadata: {},
           created_at: ts,
         });
       }
       if (Math.random() > 0.85) {
-        rows.push({ business_id: businessId, type: "chat_opened", session_id: `demo-${day}-${i}`, created_at: ts });
+        rows.push({ business_id: businessId, type: "chat_opened", session_id: `demo-${day}-${i}`, metadata: {}, created_at: ts });
         rows.push({
           business_id: businessId,
           type: "chat_query",
