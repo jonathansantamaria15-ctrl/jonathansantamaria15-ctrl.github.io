@@ -17,6 +17,9 @@ const nextConfig: NextConfig = {
   // lint pass uses an incompatible legacy ESLint CLI integration, so it is
   // skipped here to avoid a duplicate/broken lint run during build.
   eslint: { ignoreDuringBuilds: true },
+  // Minimal self-contained server output (.next/standalone) for the Windows
+  // desktop launcher build (see scripts/desktop/).
+  output: "standalone",
   images: {
     remotePatterns: [
       // Media uploaded to this project's Supabase Storage bucket.

@@ -52,6 +52,7 @@ SUPERADMIN una unica vez (botón "Convertirme en SUPERADMIN"), sin tocar SQL.
 | `npm run db:reset` | recrea la base de datos de test local y aplica las migraciones reales |
 | `npm run seed` | siembra el establecimiento demo en tu proyecto Supabase real |
 | `npm run mcp` | arranca el servidor MCP (stdio) para conectarlo a Claude |
+| `npm run build:desktop` | genera `dist-desktop/HosteleriaSaaS-Windows.zip`: un lanzador `.exe` + build standalone, para abrir la app en Windows con doble clic sin usar la terminal (ver `scripts/desktop/`) |
 
 ## Estructura
 

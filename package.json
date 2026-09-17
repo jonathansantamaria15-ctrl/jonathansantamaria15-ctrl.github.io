@@ -12,7 +12,8 @@
     "test:watch": "vitest",
     "seed": "tsx scripts/seed.ts",
     "db:reset": "bash scripts/db-reset.sh",
-    "mcp": "tsx mcp-server/src/index.ts"
+    "mcp": "tsx mcp-server/src/index.ts",
+    "build:desktop": "bash scripts/desktop/build.sh"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.30.0",

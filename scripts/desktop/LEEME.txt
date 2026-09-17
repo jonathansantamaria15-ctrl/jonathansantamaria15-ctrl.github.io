@@ -1,0 +1,40 @@
+HosteleriaSaaS - lanzador de escritorio
+========================================
+
+PRIMER USO (una sola vez):
+1. Copia el archivo ".env.local.example" y renombra la copia a ".env.local"
+   (debe quedar en esta misma carpeta, junto a HosteleriaSaaS.exe).
+2. Abre ".env.local" con el Bloc de notas y rellena:
+     SUPABASE_SERVICE_ROLE_KEY=tu_clave_secreta_de_supabase
+   La encuentras en tu proyecto Supabase: Project Settings -> API ->
+   service_role. NO la compartas con nadie ni la subas a internet: da
+   acceso total a tu base de datos.
+
+USO NORMAL:
+- Haz doble clic en HosteleriaSaaS.exe.
+- Se abrira una ventana negra (la consola del servidor) y, a los pocos
+  segundos, tu navegador con la aplicacion ya abierta.
+- Deja esa ventana negra abierta mientras uses la app. Cerrarla apaga el
+  servidor.
+
+CUENTAS DE PRUEBA (contraseña: Demo1234!):
+  superadmin@demo.local
+  owner@demo.local
+  manager@demo.local
+  employee@demo.local
+
+Carta publica de ejemplo, una vez arrancado:
+  http://localhost:3000/r/restaurante-demo-cantabria
+
+PROBLEMAS FRECUENTES:
+- "No se pudo arrancar el servidor. ¿Tienes Node.js instalado?": instala
+  Node.js (version 18 o superior) desde https://nodejs.org y prueba de
+  nuevo. Este programa reutiliza tu Node.js instalado para no tener que
+  distribuir un .exe gigante.
+- El antivirus/Windows Defender avisa de que el .exe no es de un editor
+  reconocido: es normal en un ejecutable sin firma digital (no forma
+  parte del sistema operativo ni de una tienda de aplicaciones). El
+  codigo fuente completo esta en el repositorio (scripts/desktop/launcher.js).
+- Si quieres cambiar el proyecto Supabase al que apunta, hay que volver a
+  generar este paquete con las nuevas claves (las claves publicas quedan
+  incrustadas en el propio build, no se leen de .env.local en este modo).

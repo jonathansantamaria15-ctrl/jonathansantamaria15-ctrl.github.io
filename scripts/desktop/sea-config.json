@@ -1,0 +1,6 @@
+{
+  "main": "launcher.mjs",
+  "output": "sea-prep.blob",
+  "disableExperimentalSEAWarning": true,
+  "useCodeCache": false
+}
