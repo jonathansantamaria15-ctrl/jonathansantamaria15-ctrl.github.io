@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-chrome-bg text-chrome-text antialiased;
+}
+
+/* Tenant (PUBLIC + BUSINESS accent) theme variable defaults; overridden
+   per-business by ThemeProvider (src/components/theme/theme-provider.tsx). */
+:root {
+  --tenant-primary: #1f2937;
+  --tenant-secondary: #6b7280;
+  --tenant-bg: #ffffff;
+  --tenant-surface: #f8f8f7;
+  --tenant-text: #111827;
+  --tenant-accent: #b45309;
+  --tenant-font-heading: "Fraunces", serif;
+  --tenant-font-body: "Inter", sans-serif;
+  --tenant-radius: 0.75rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

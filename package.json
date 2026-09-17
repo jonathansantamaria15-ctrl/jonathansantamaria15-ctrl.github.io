@@ -1,0 +1,50 @@
+{
+  "name": "hosteleria-saas",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "seed": "tsx scripts/seed.ts",
+    "db:reset": "bash scripts/db-reset.sh",
+    "mcp": "tsx mcp-server/src/index.ts",
+    "build:desktop": "bash scripts/desktop/build.sh"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "@supabase/ssr": "0.5.2",
+    "@supabase/supabase-js": "2.112.4",
+    "@types/node": "22.10.2",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "autoprefixer": "10.4.20",
+    "clsx": "2.1.1",
+    "date-fns": "4.1.0",
+    "eslint": "8.57.1",
+    "eslint-config-next": "15.5.24",
+    "nanoid": "5.0.9",
+    "next": "15.5.24",
+    "postcss": "8.5.6",
+    "qrcode": "1.5.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "recharts": "2.13.3",
+    "server-only": "0.0.1",
+    "tailwindcss": "3.4.15",
+    "typescript": "5.6.3",
+    "zod": "3.24.1"
+  },
+  "devDependencies": {
+    "@types/pg": "8.11.10",
+    "@types/qrcode": "1.5.5",
+    "dotenv": "16.4.7",
+    "pg": "8.13.1",
+    "tsx": "4.19.2",
+    "vitest": "2.1.9"
+  }
+}
