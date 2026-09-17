@@ -39,7 +39,7 @@ yarn-error.log*
 
 # desktop launcher build output (see scripts/desktop/)
 /dist-desktop/
-scripts/desktop/sea-prep.blob
+scripts/desktop/HosteleriaSaaS.exe
 
 # supabase CLI
 /supabase/.temp/
