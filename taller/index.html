@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JSS Taller · Programa de gestión para talleres</title>
+<meta name="description" content="Programa de gestión para talleres mecánicos: clientes, vehículos, órdenes de trabajo, stock, proveedores y facturas en PDF. Funciona sin Internet en Windows.">
+<style>
+:root{--bg:#0f1115;--card:#181b22;--line:#262a33;--text:#eef0f4;--muted:#a3a9b5;--accent:#f5a524;--accent-ink:#1a1204}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{padding:18px 0;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.logo{font-weight:800;letter-spacing:.5px}.logo span{color:var(--accent)}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:700;padding:12px 20px;border-radius:10px;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+.hero{padding:72px 0 48px}
+.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.12;margin:0 0 16px;max-width:760px}
+.hero p{color:var(--muted);font-size:18px;max-width:640px;margin:0 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.badges{display:flex;gap:18px;flex-wrap:wrap;margin-top:28px;color:var(--muted);font-size:14px}
+section{padding:48px 0;border-top:1px solid var(--line)}
+h2{font-size:28px;margin:0 0 24px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:0 0 6px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:15px}
+.pain li{margin:8px 0;color:var(--muted)}
+.price{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.price .card{padding:28px}
+.price .amount{font-size:40px;font-weight:800;margin:8px 0}.price .amount small{font-size:16px;color:var(--muted);font-weight:500}
+.price ul{padding-left:18px;color:var(--muted)}
+.featured{border-color:var(--accent)}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:600}.faq p{color:var(--muted);margin:10px 0 0}
+footer{padding:32px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="logo">JSS <span>Taller</span></div>
+  <a class="btn" href="#demo">Pedir demo</a>
+</div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Deja el papel y el Excel. Controla tu taller desde un solo programa.</h1>
+    <p>Clientes, vehículos, órdenes de trabajo, stock, proveedores y facturas en PDF. Funciona en tu ordenador con Windows, incluso sin Internet, y tus datos se quedan en tu taller.</p>
+    <div class="cta">
+      <a class="btn" href="#demo">Quiero verlo en mi taller</a>
+      <a class="btn ghost" href="#precios">Ver precios</a>
+    </div>
+    <div class="badges"><span>✔ Sin Internet</span><span>✔ Copias de seguridad automáticas</span><span>✔ Instalación y migración incluidas</span><span>✔ Soporte por WhatsApp</span></div>
+  </div>
+</main>
+
+<section><div class="wrap">
+  <h2>¿Te suena esto?</h2>
+  <ul class="pain">
+    <li>Buscas en una libreta qué se le hizo a un coche hace un año.</li>
+    <li>No sabes cuántas pastillas de freno o filtros te quedan hasta que faltan.</li>
+    <li>Haces los presupuestos y facturas a mano o en Word.</li>
+    <li>No tienes claro cuánto ganas de verdad en cada reparación.</li>
+  </ul>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Todo lo que necesita un taller</h2>
+  <div class="grid">
+    <div class="card"><h3>Clientes y vehículos</h3><p>Ficha de cada cliente con todos sus vehículos y el historial completo de reparaciones.</p></div>
+    <div class="card"><h3>Órdenes de trabajo</h3><p>Estados (pendiente, en curso, terminado), materiales, mano de obra y fotos del trabajo.</p></div>
+    <div class="card"><h3>Agenda</h3><p>Vista semanal y mensual para organizar las entradas al taller.</p></div>
+    <div class="card"><h3>Almacén y stock</h3><p>Control de existencias, proveedores y pedidos.</p></div>
+    <div class="card"><h3>Finanzas y márgenes</h3><p>Lo que facturas, lo que gastas y lo que ganas en cada trabajo.</p></div>
+    <div class="card"><h3>Informes en PDF</h3><p>Presupuestos y documentos con tu logo y tus colores, listos para enviar.</p></div>
+    <div class="card"><h3>Copias de seguridad</h3><p>Copias automáticas y manuales para no perder nunca tus datos.</p></div>
+    <div class="card"><h3>100 % local</h3><p>Funciona sin conexión. Tus datos no dependen de ningún servidor.</p></div>
+  </div>
+</div></section>
+
+<section id="precios"><div class="wrap">
+  <h2>Precios claros</h2>
+  <div class="price">
+    <div class="card featured">
+      <h3>Mensual</h3>
+      <div class="amount">29 € <small>/mes</small></div>
+      <ul>
+        <li>Alta e instalación: 149 € (pago único)</li>
+        <li>Pasamos tus clientes y vehículos desde Excel</li>
+        <li>Actualizaciones incluidas</li>
+        <li>Soporte por WhatsApp</li>
+        <li>Sin permanencia</li>
+      </ul>
+      <a class="btn" href="#demo">Empezar</a>
+    </div>
+    <div class="card">
+      <h3>Anual</h3>
+      <div class="amount">290 € <small>/año</small></div>
+      <ul>
+        <li>2 meses gratis frente al pago mensual</li>
+        <li>Alta e instalación incluidas</li>
+        <li>Actualizaciones y soporte incluidos</li>
+      </ul>
+      <a class="btn ghost" href="#demo">Elegir anual</a>
+    </div>
+  </div>
+  <p style="color:var(--muted);margin-top:16px;font-size:14px">Precios sin IVA.</p>
+</div></section>
+
+<section class="faq"><div class="wrap">
+  <h2>Preguntas frecuentes</h2>
+  <details><summary>¿Necesito Internet?</summary><p>No. El programa funciona en tu ordenador con Windows sin conexión. Solo se necesita Internet para recibir actualizaciones y soporte.</p></details>
+  <details><summary>¿Qué pasa con los datos que ya tengo?</summary><p>Si los tienes en Excel o en otro programa que pueda exportarlos, los pasamos nosotros durante la instalación.</p></details>
+  <details><summary>¿Y si no me convence?</summary><p>No hay permanencia: dejas de pagar cuando quieras y te llevas tus datos exportados.</p></details>
+  <details><summary>¿Lo puedo adaptar a mi taller?</summary><p>Sí: tu logo, tus colores y tus tarifas. Si necesitas algo específico, lo hablamos.</p></details>
+</div></section>
+
+<section id="demo"><div class="wrap">
+  <h2>Pide una demo gratis de 15 minutos</h2>
+  <p style="color:var(--muted);max-width:620px">Voy a tu taller (Cantabria y Bizkaia) o te lo enseño por videollamada. Sin compromiso.</p>
+  <div class="cta">
+    <a class="btn" href="mailto:jonathansantamaria15@gmail.com?subject=Demo%20JSS%20Taller&body=Nombre%20del%20taller%3A%0ALocalidad%3A%0ATel%C3%A9fono%3A%0A%C2%BFCu%C3%A1ndo%20te%20viene%20bien%3F%3A">Pedir demo por email</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">© 2026 JSS · <a href="../">Inicio</a> · Contacto: <a href="mailto:jonathansantamaria15@gmail.com">jonathansantamaria15@gmail.com</a></div></footer>
+</body>
+</html>
